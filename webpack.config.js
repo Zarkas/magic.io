@@ -14,6 +14,12 @@ module.exports = {
       {test: /.(css)$/, use: ['style-loader', 'css-loader']}
     ]
   },
+  node: {
+    console: false,
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
+  },
   devServer: {
     historyApiFallback: true
   },
